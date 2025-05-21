@@ -1,7 +1,7 @@
-let start_offset = localStorage.node_offset * 1000; // if running on multiple vps instances
-let MARGIN = 1470;
+let start_offset = (localStorage.node_offset || 0) * 1000; // if running on multiple vps instances
+let MARGIN = 1470; //account balance
 let time_end = 12;
-let poll_int = 8000;
+let poll_int = 8000; // poll the announcement page every 8 seconds.
 let new_rates = false;
 let old_rates = false;
 let shorts_open = false;
